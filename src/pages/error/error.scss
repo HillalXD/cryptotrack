@@ -1,0 +1,33 @@
+.container-err{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light);
+    font-family: "poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+
+    .card-container-err{
+        display: flex;
+        flex-direction: column;
+        flex: 5;
+        max-width: 1280px;
+        height: 90vh;
+        margin: 10px 10px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: var(--grey);
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        overflow-x: hidden;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}

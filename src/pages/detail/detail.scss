@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ruda:wght@400;600;700&display=swap");
+:root {
+  --light: #f6f6f9;
+  --primary: #1976d2;
+  --light-primary: #cfe8ff;
+  --grey: #fff;
+  --dark-grey: #aaaaaa;
+  --dark: #3b3b3b;
+  --danger: #d32f2f;
+  --light-danger: #fecdd3;
+  --warning: #fbc02d;
+  --light-warning: #fff2c6;
+  --success: #388e3c;
+  --light-success: #bbf7d0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light);
+    font-family: "poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+
+    .detail-container{
+        flex: 5;
+        max-width: 1800px;
+        height: 90vh;
+        margin: 10px 10px;
+        width: 100vh;
+        margin: 0 auto;
+        background-color: var(--grey);
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        h1{
+            margin: 30px 40px;
+        }
+
+        .crypto-data{
+            display: flex;
+
+            .left-data{
+                flex: 1;
+                height: 76vh;
+                margin: 0 20px;
+                background-color: var(--grey);
+                border-radius: 10px;
+                box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+
+                h3{
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                    margin-left: 30px;
+                    font-size: 32px;
+                    font-weight: bolder;
+                }
+
+                .onchain-data{
+                    display: grid;
+                    list-style-type: none;
+                    grid-template-columns: 20% 80%;
+                    height: 5vh;
+                    align-items: center;
+                    background-color: var(--light);
+                    color: var(--dark);
+                    padding: 0.5rem 1rem;
+                    border-radius: 5px;
+                    margin: 0.8rem 10px;
+
+                    .data-title{
+                        font-size: 11px;
+                    }
+
+                    .data{
+                        text-align: end;
+                        font-size: 15px;
+                        font-weight: bold;
+                    }
+                }
+
+            }
+
+            .right-data{
+                flex: 3;
+                margin: 0px 20px;
+                background-color: var(--grey);
+                border-radius: 10px;
+                padding: 20px;
+                padding-top: 50px;
+                align-items: center;
+                justify-content: center;
+                box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+            }
+        }
+    }
+}
